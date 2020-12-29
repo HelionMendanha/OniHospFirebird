@@ -101,11 +101,19 @@ Insira o texto abaixo ao final do arquivo ( /etc/samba/smb.conf ):
 ```
 
 ## Adicionando usuário ao samba, ( compartilhamento de arquivo pela rede ) e definindo senha
+```
 smbpasswd -a fbbackup
+```
 > Usuário para o manipular os backups
+
+```
 smbpasswd -a oni
+```
 > Usuário para executar os executáveis do OniHosp
+
+```
 smbpasswd -a oniadmin
+```
 > Usuário para administrar os executáveis do OniHosp
 
 ## Habilitando os serviços, (Firebird e Samba), para iniciar com o Boot da Máquina 
