@@ -116,6 +116,22 @@ smbpasswd -a oniadmin
 ```
 > Usuário para administrar os executáveis do OniHosp
 
+## Redefinindo senha do usuário já adicionado
+```
+smbpasswd fbbackup
+```
+> Usuário para o manipular os backups
+
+```
+smbpasswd oni
+```
+> Usuário para executar os executáveis do OniHosp
+
+```
+smbpasswd oniadmin
+```
+> Usuário para administrar os executáveis do OniHosp
+
 ## Habilitando os serviços, (Firebird e Samba), para iniciar com o Boot da Máquina 
 ```
 systemctl enable firebird-superclassic
