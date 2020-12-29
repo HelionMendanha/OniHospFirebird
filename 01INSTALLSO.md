@@ -26,6 +26,32 @@
 7. Selecione a região correspondente ao seu fuso horário, habilite o NTP e clique em “DONE” para finalizar.
 <img src="images/01_install_time.png" />
 
+8. Selecione a opção “Keyboard” para selecionar o layout do teclado.
+<img src="images/01_install_keyboard.png" />
+
+9. Adicione o teclado Português(Brasil) , Remova o teclado English (us) e clique em “DONE” para finalizar.
+<img src="images/01_install_keyboardsel.png" />
+
+10. Selecione a opção “Installation Destination” para configurar as partições de disco.
+<img src="images/01_install_disk.png" />
+
+11. Marque a opção para configurar a partição e clique em “DONE” para ir para configuração.
+<img src="images/01_install_diskSel.png" />
+
+12. Clique conforme imagem para gerar o padrão pelo sistema
+<img src="images/01_install_diskSel2.png" />
+
+13. Neste momento poderá ajusta o tamanho de disco para cada partição, não iremos usar o /home, após ajustar clique em “DONE” para finalizar.
+<img src="images/01_install_diskSel3.png" />
+
+14. Aceite as alterações, neste momento as alterações já serão gravadas no HD.
+<img src="images/01_install_diskSel4.png" />
+
+15. Tudo configurado, então clique para começa a instalação
+<img src="images/01_install_so.png" />
+
+
+___
 # Outros documentos
 - [Download ISO](README.md)
 - [Instalando SO](01INSTALLSO.md)

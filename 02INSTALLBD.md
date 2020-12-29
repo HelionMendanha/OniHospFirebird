@@ -135,7 +135,7 @@ systemctl restart smb
 ```
 systemctl status smb
 ```
-
+___
 # Outros documentos
 - [Download ISO](README.md)
 - [Instalando SO](01INSTALLSO.md)
