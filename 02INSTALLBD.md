@@ -24,10 +24,14 @@ firewall-cmd --reload
 yum install epel-release
 ```
 
+> Reponda “y” ou “yes” para os questinamentos.
+
 ## Instalando serviços
 ```
 yum install firebird-superclassic samba vim zip unzip tzdata ca-certificates
 ```
+
+> Reponda “y” ou “yes” para os questinamentos.
 
 ## Habilitando os serviços, (Firebird e Samba), para iniciar com o Boot da Máquina 
 ```
