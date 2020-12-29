@@ -101,8 +101,8 @@ Comando para reiniciar
 ```
 reboot
 ```
-
-## Comando do firebird
+___
+## Comandos do firebird
 
 ### Iniciando o Firebird
 ```
@@ -117,6 +117,23 @@ systemctl restart firebird-superclassic
 ### Verificando o status do Firebird
 ```
 systemctl status firebird-superclassic
+```
+___
+## Comandos do Samba
+
+### Iniciando o Samba
+```
+systemctl start smb
+```
+
+### Reiniciando o Samba
+```
+systemctl restart smb
+```
+
+### Verificando o status do Samba
+```
+systemctl status smb
 ```
 
 # Outros documentos
