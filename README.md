@@ -18,5 +18,5 @@ Lembramos que é responsabilidade do cliente os backups dos dados, sendo recomen
 # Outros documentos
 - [Download ISO](README.md)
 - [Instalando SO](01INSTALLSO.md)
-- [Instalando Serviços](01INSTALLBD.md)
+- [Instalando Serviços](02INSTALLBD.md)
 
