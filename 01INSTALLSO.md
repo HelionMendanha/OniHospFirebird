@@ -56,7 +56,7 @@
 17. Ao finalizar a instalação reinicie o sistema.
 <img src="images/01_install_reboot.png" />
 
-
+18. Pronto o seu sistema já está instalado.
 ___
 # Outros documentos
 - [Download ISO](README.md)
