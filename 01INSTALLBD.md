@@ -29,7 +29,7 @@ yum install epel-release
 yum install firebird-superclassic samba vim zip unzip tzdata ca-certificates
 ```
 
-## Habilitando os serviços Firebird e Samba para iniciar com o Boot da Máquina 
+## Habilitando os serviços, (Firebird e Samba), para iniciar com o Boot da Máquina 
 ```
 systemctl enable firebird-superclassic
 systemctl enable smb
@@ -94,6 +94,12 @@ Insira o texto abaixo ao final do arquivo ( /etc/samba/smb.conf ):
 	write list = oniadmin
 	read list = oni,oniadmin
 	valid users = oni,oniadmin
+```
+
+## Finalizando a configuração reinicie a máquina e cheque se os serviços iniciaram
+Comando para reiniciar
+```
+reboot
 ```
 
 ## Comando do firebird
