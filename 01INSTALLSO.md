@@ -8,7 +8,7 @@
 ### Iniciando instalação
 1. Faça boot da ISO ou do CD.
 
-2. Utilizando as setas do teclado, selecione a opção "Install CentOS 7", então tecle Enter.
+2. Utilizando as setas do teclado, selecione a opção “Install CentOS 7”, então tecle Enter.
 <img src="images/01_install_boot.png" />
 
 3. Aguarde alguns instantes até o surgimento do prompt de instalação. Em seguida, clique em “Continue”.
@@ -57,9 +57,11 @@
 <img src="images/01_install_reboot.png" />
 
 18. Pronto o seu sistema já está instalado.
+
 ___
 # Outros documentos
 - [Download ISO](README.md)
 - [Instalando SO](01INSTALLSO.md)
 - [Instalando Serviços](02INSTALLBD.md)
+- [Adicionando base de dados no servidor](03BASE.md)
 
