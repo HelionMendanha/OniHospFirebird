@@ -50,6 +50,12 @@
 15. Tudo configurado, então clique para começa a instalação
 <img src="images/01_install_so.png" />
 
+16. Enquanto a instalação é executada defina senha o usuário “root” e crie o seu usuário no sistema caso deseje.
+<img src="images/01_install_user.png" />
+
+17. Ao finalizar a instalação reinicie o sistema.
+<img src="images/01_install_reboot.png" />
+
 
 ___
 # Outros documentos
