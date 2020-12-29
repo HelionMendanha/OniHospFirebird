@@ -5,13 +5,13 @@
 # Adicionando script para backup da base de dados
 
 Para adicionar a base de dados no servidor Linux a partir de uma máquina Windows pode usar de alguma formas.
-- Compartilhamento de arquivo via rede
-- FileZilla https://filezilla-project.org/download.php?platform=win64
-- pscp https://the.earth.li/~sgtatham/putty/latest/w64/pscp.exe
 
 ## Usando o compartilhamento de arquivo via rede
-1. Tecle a tecla “Windows” + “r” e digite “\\\ip_do_servidor” e clique em “OK”.
-<img src="images/03_rede001.png" />
+```
+mkdir -p /opt/dba
+wget https://raw.githubusercontent.com/HelionMendanha/OniHospFirebird/main/scriptBackupFirebird.sh -P /opt/dba
+chmod +x /opt/dba/scriptBackupFirebird.sh
+```
 
 2. Informe o usuário e senha definido no samba.
 <img src="images/03_rede001.png" />
