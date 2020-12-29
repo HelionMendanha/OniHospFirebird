@@ -33,10 +33,10 @@ yum install firebird-superclassic samba vim zip unzip tzdata ca-certificates
 
 > Reponda “y” ou “yes” para os questinamentos.
 
-## Habilitando os serviços, (Firebird e Samba), para iniciar com o Boot da Máquina 
+## Ajustando a porta auxiliar do firebird
 ```
-systemctl enable firebird-superclassic
-systemctl enable smb
+sed -i 's/#RemoteServicePort = 3050/RemoteServicePort = 3050/' /etc/firebird/firebird.conf
+sed -i 's/#RemoteAuxPort = 0/RemoteAuxPort = 3050/' /etc/firebird/firebird.conf
 ```
 
 ## Adicionando usuários (fbbackup,oni e oniadmin)
@@ -98,6 +98,12 @@ Insira o texto abaixo ao final do arquivo ( /etc/samba/smb.conf ):
 	write list = oniadmin
 	read list = oni,oniadmin
 	valid users = oni,oniadmin
+```
+
+## Habilitando os serviços, (Firebird e Samba), para iniciar com o Boot da Máquina 
+```
+systemctl enable firebird-superclassic
+systemctl enable smb
 ```
 
 ## Finalizando a configuração reinicie a máquina e cheque se os serviços iniciaram
