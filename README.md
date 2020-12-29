@@ -15,6 +15,10 @@ Lembramos que é responsabilidade do cliente os backups dos dados, sendo recomen
 ## Download da ISO
 - A iso está disponível no site oficial do CentOS: [(CentOS 7 x86_64)](http://isoredirect.centos.org/centos/7/isos/x86_64/)
 
+## Instalando SO CentOS 7.9
+[(Instalando SO CentOS 7.9)](01INSTALLSO.md)
+
+
 
 ### Usuário
 ```
