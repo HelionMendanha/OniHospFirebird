@@ -4,9 +4,9 @@
 
 # Adicionando script para backup da base de dados
 
-Para adicionar a base de dados no servidor Linux a partir de uma máquina Windows pode usar de alguma formas.
+Baixando script, ajustando caminho da base e agendando backup local
 
-## Usando o compartilhamento de arquivo via rede
+## Baixando o script de backup e ajustando permissão do script
 ```
 mkdir -p /opt/dba
 wget https://raw.githubusercontent.com/HelionMendanha/OniHospFirebird/main/scriptBackupFirebird.sh -P /opt/dba

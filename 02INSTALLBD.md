@@ -28,7 +28,7 @@ yum install epel-release
 
 ## Instalando serviços
 ```
-yum install firebird-superclassic samba vim zip unzip tzdata ca-certificates
+yum install firebird-superclassic samba vim wget zip unzip tzdata ca-certificates
 ```
 
 > Reponda “y” ou “yes” para os questinamentos.
