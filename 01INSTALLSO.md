@@ -19,3 +19,9 @@
 
 5. Selecione a região correspondente ao seu fuso horário.
 <img src="images/01_install_time.png" />
+
+# Outros documentos
+- [Download ISO](README.md)
+- [Instalando SO](01INSTALLSO.md)
+- [Instalando Serviços](01INSTALLBD.md)
+
