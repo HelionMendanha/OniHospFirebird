@@ -13,7 +13,7 @@ Lembramos que é responsabilidade do cliente os backups dos dados, sendo recomen
 - Banco de dados: firebird-classic-2.5
 
 ## Download da ISO
-- A iso está disponível no site oficial do CentOS: [(CentOS 7 x86_64)](http://isoredirect.centos.org/centos/7/isos/x86_64/){:target="_blank" rel="noopener"}
+- A iso está disponível no site oficial do CentOS: [(CentOS 7 x86_64)](http://isoredirect.centos.org/centos/7/isos/x86_64/){target="_blank"}
 
 ___
 # Outros documentos
