@@ -7,19 +7,27 @@
 Baixando script, ajustando caminho da base e agendando backup local
 >Este script de backup fará backup automaticamente na própria máquina, orientar o cliente a fazer copias destes backups para outro local, pois em caso de perca do HD ou roubo da máquina não será possível a recuperação dos dados.
 
-## Baixando o script de backup e ajustando permissão do script
+## Baixando o script de backup e configurando backup
+
+1. Baixe o script de backup e ajuste sua permisão para poder executar
 ```
 mkdir -p /opt/dba
 wget https://raw.githubusercontent.com/HelionMendanha/OniHospFirebird/main/scriptBackupFirebird.sh -P /opt/dba
 chmod +x /opt/dba/scriptBackupFirebird.sh
 ```
 
-2. Informe o usuário e senha definido no samba.
-<img src="images/03_rede001.png" />
+2. Edite o script de backup para ajusar o caminho da base.
+```
+vim /opt/dba/scriptBackupFirebird.sh
+```
 
-3. Acesso o diretório do usuário e cole o arquivo no qual deseja colocar no servidor.
-<img src="images/03_rede003.png" />
+3. Ajuste o caminho da base conforme exemplo abaixo.
+>base="/firebirddatafiles/BASE.FDB"
 
+4. Execute o script manualmente para confirmar que o backup está sendo realizado
+```
+/opt/dba/scriptBackupFirebird.sh
+```
 ___
 # Outros documentos
 - [Download ISO](README.md)

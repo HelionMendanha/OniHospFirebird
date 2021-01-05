@@ -14,6 +14,16 @@ nw=$(date "+%Y_%m_%d_%Hh%Mm%Ss")
 FBACKUP="/firebirdbackup/bkp$cliente$nw.fbk"
 FBACKUPTGZ="$FBACKUP.tar.gz"
 
+if [ -f "$base" ]; then
+	echo -e "\e[32m$base OK\e[m"
+	du -hs $base
+	echo ""
+else
+	echo -e "\e[31mFile not found: $base\e[m"
+	echo -e "\e[31mArquivo de informado de base para backup não existe\e[m"
+	exit 0
+fi
+
 function backup()
 {
 	date
@@ -47,6 +57,7 @@ fi
 # Remove backups antigos ====================================
 echo ""
 date
+echo "Removendo backups antigos"
 echo "find /firebirdbackup -type f -mtime +30 | xargs rm -f"
 find /firebirdbackup -type f -mtime +30 | xargs rm -f
 
