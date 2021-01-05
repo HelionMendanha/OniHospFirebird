@@ -24,6 +24,16 @@ else
 	exit 0
 fi
 
+if [ -d "/firebirdbackup" ]; then
+	echo -e "\e[32m$base OK\e[m"
+	du -hs /firebirdbackup
+	echo ""
+else
+	echo -e "\e[31mFolder not found: $base\e[m"
+	echo -e "\e[31mDiretório para armazenamento de backup não existe\e[m"
+	exit 0
+fi
+
 function backup()
 {
 	date
@@ -52,6 +62,7 @@ then
 		echo -e "\e[31m...............................\e[m"
 		echo -e "\e[31m......Backup not found!........\e[m"
 		echo -e "\e[31m...............................\e[m"
+		exit 0
 fi
 
 # Remove backups antigos ====================================
@@ -60,6 +71,10 @@ date
 echo "Removendo backups antigos"
 echo "find /firebirdbackup -type f -mtime +30 | xargs rm -f"
 find /firebirdbackup -type f -mtime +30 | xargs rm -f
+
+du -hs $FBACKUPTGZ
+echo -e "\e[32m$FBACKUPTGZ OK\e[m"
+echo -e "\e[32mSucesso\e[m"
 
 #  Cron 
 # 20 3,12,20 * * * /opt/dba/scriptBackupFirebird.sh > /opt/dba/backup.log

@@ -28,6 +28,15 @@ vim /opt/dba/scriptBackupFirebird.sh
 ```
 /opt/dba/scriptBackupFirebird.sh
 ```
+>Após executar analise o log para se há mensagem de "Sucesso"
+
+5. Adicione um agendamento via "crontab" para executar os backups automaticamente
+##### 
+```
+crontab -e
+```
+>20 3,12,20 * * * /opt/dba/scriptBackupFirebird.sh > /opt/dba/backup.log
+
 ___
 # Outros documentos
 - [Download ISO](README.md)
