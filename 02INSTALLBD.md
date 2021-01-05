@@ -4,7 +4,7 @@
 
 # Instalando e configurando serviços
 
-Com sistema operacional instalado, inicialize um terminal de comandos através do próprio sistema operacional ou utilizando um cliente SSH.
+Com sistema operacional instalado, inicialize um terminal de comandos através do próprio sistema operacional ou utilizando um cliente SSH e execute os comandos abaixo.
 
 ## Desativando SELINUX
 ```
@@ -17,6 +17,12 @@ firewall-cmd --permanent --zone=public --add-service=samba
 firewall-cmd --permanent --zone=public --add-port=3050/tcp
 firewall-cmd --permanent --zone=public --add-port=3051/tcp
 firewall-cmd --reload
+```
+## Verificando status, portas e serviços do Firewall
+```
+firewall-cmd --state
+firewall-cmd --zone=public --permanent --list-ports
+firewall-cmd --zone=public --permanent --list-services
 ```
 
 ## Adicionando repositório EPEL
