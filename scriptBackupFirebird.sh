@@ -1,14 +1,13 @@
 #!/bin/bash
 
+# Caminho da base no Disco  
+base="/firebirddatafiles/BASE.FDB"
+
 # Nome do cliente + _
-cliente="MedCor_"
 cliente="FB_"
 
-# Após /firebirddatafiles/        
-base="BASE.FDB"
 
-
-# Script com padrao /firebirdbackup e /firebirddatafiles
+# Script com padrao /firebirdbackup
 # .............................................................
 GBAK="/usr/bin/gbak -v -b -t -user SYSDBA -pas masterkey -y /opt/dba/export.log"
 nw=$(date "+%Y_%m_%d_%Hh%Mm%Ss")
@@ -33,11 +32,11 @@ echo -e "\e[33m. Backup $cliente $nw.............\e[m"
 echo -e "\e[33m..................................\e[m"
 echo ""
 
-backup "$GBAK /firebirddatafiles/$base $FBACKUP"
+backup "$GBAK $base $FBACKUP"
 
 if [ -f "$FBACKUP" ]
 then
-		backup "zip $FBACKUPTGZ $FBACKUP"
+		backup "tar -zcvf $FBACKUPTGZ $FBACKUP"
 		backup "rm -rf $FBACKUP"
 	else
 		echo -e "\e[31m...............................\e[m"
@@ -53,3 +52,4 @@ find /firebirdbackup -type f -mtime +30 | xargs rm -f
 
 #  Cron 
 # 20 3,12,20 * * * /opt/dba/scriptBackupFirebird.sh > /opt/dba/backup.log
+

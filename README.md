@@ -21,4 +21,5 @@ ___
 - [Instalando SO](01INSTALLSO.md)
 - [Instalando Serviços](02INSTALLBD.md)
 - [Adicionando base de dados no servidor](03BASE.md)
+- [Backup do banco de dados](04BACKUP.md)
 

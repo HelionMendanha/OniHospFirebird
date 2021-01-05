@@ -18,6 +18,7 @@ firewall-cmd --permanent --zone=public --add-port=3050/tcp
 firewall-cmd --permanent --zone=public --add-port=3051/tcp
 firewall-cmd --reload
 ```
+
 ## Verificando status, portas e serviços do Firewall
 ```
 firewall-cmd --state
@@ -52,6 +53,7 @@ usermod -g fbbackup -G firebird firebird
 useradd -m oni
 useradd -m oniadmin
 ```
+
 ## Criando diretórios e garantindo permissões
 ```
 mkdir -p /firebirddatafiles

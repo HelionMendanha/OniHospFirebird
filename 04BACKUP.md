@@ -5,6 +5,7 @@
 # Adicionando script para backup da base de dados
 
 Baixando script, ajustando caminho da base e agendando backup local
+>Este script de backup fará backup automaticamente na própria máquina, orientar o cliente a fazer copias destes backups para outro local, pois em caso de perca do HD ou roubo da máquina não será possível a recuperação dos dados.
 
 ## Baixando o script de backup e ajustando permissão do script
 ```
@@ -25,6 +26,7 @@ ___
 - [Instalando SO](01INSTALLSO.md)
 - [Instalando Serviços](02INSTALLBD.md)
 - [Adicionando base de dados no servidor](03BASE.md)
+- [Backup do banco de dados](04BACKUP.md)
 
 
 
