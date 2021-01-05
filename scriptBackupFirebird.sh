@@ -74,6 +74,7 @@ find /firebirdbackup -type f -mtime +30 | xargs rm -f
 
 echo ""
 echo ""
+echo -e "\e[32mBackup gerado\e[m"
 echo -e "\e[32m$FBACKUPTGZ OK\e[m"
 du -hs $FBACKUPTGZ
 echo ""
