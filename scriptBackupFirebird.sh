@@ -25,7 +25,7 @@ else
 fi
 
 if [ -d "/firebirdbackup" ]; then
-	echo -e "\e[32m$base OK\e[m"
+	echo -e "\e[32m/firebirdbackup OK\e[m"
 	du -hs /firebirdbackup
 	echo ""
 else
@@ -72,9 +72,13 @@ echo "Removendo backups antigos"
 echo "find /firebirdbackup -type f -mtime +30 | xargs rm -f"
 find /firebirdbackup -type f -mtime +30 | xargs rm -f
 
-du -hs $FBACKUPTGZ
+echo ""
+echo ""
 echo -e "\e[32m$FBACKUPTGZ OK\e[m"
+du -hs $FBACKUPTGZ
+echo ""
 echo -e "\e[32mSucesso\e[m"
+echo ""
 
 #  Cron 
 # 20 3,12,20 * * * /opt/dba/scriptBackupFirebird.sh > /opt/dba/backup.log
