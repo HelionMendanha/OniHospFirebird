@@ -154,6 +154,11 @@ reboot
 ___
 ## Comandos do firebird
 
+### Parando o Firebird
+```
+systemctl stop firebird-superclassic
+```
+
 ### Iniciando o Firebird
 ```
 systemctl start firebird-superclassic
