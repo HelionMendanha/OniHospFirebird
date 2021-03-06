@@ -4,7 +4,7 @@
 
 ## Trocando o usuário de rede
 
-Geralmente o usuário de rede está logado com o oni e você precisar trocar para o oniadmin ou fbbackup, como fazer isso se Windows já pede para colocar o novo usuário e senha?
+Geralmente o usuário de rede está logado com o usuário **oni** e você precisar trocar para o **oniadmin** ou **fbbackup**, como fazer isso se Windows já não pede para colocar o novo usuário e senha?
 
 1. Encerre/feche todos os "Explorador de Arquivo" e "Prompt de Comando"
 <img src="images/06_Encerrar.png" />
@@ -24,7 +24,7 @@ net use * /delete
 explorer
 ```
 
-5. Não esqueça de após finalizar o trabalho de remover novamente todas as conexões e deixar logado com o usuário padrão.
+> Não esqueça de após finalizar o trabalho de remover novamente todas as conexões e deixar logado com o usuário padrão.
 
 ___
 # Outros documentos
