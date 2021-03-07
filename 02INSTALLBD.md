@@ -26,11 +26,16 @@ firewall-cmd --zone=public --permanent --list-ports
 firewall-cmd --zone=public --permanent --list-services
 ```
 
-## Adicionando repositório EPEL
+## Adicionando repositório EPEL no CentOS 7
 ```
 yum install epel-release
 ```
+> Reponda “y” ou “yes” para os questinamentos.
 
+## Adicionando repositório EPEL no Oracle Linux 7
+```
+yum install oracle-epel-release-el7
+```
 > Reponda “y” ou “yes” para os questinamentos.
 
 ## Instalando serviços
@@ -44,6 +49,7 @@ yum install firebird-superclassic samba vim wget zip unzip tzdata ca-certificate
 ```
 sed -i 's/#RemoteServicePort = 3050/RemoteServicePort = 3050/' /etc/firebird/firebird.conf
 sed -i 's/#RemoteAuxPort = 0/RemoteAuxPort = 3050/' /etc/firebird/firebird.conf
+cat /etc/firebird/firebird.conf | grep 305
 ```
 
 ## Adicionando usuários (fbbackup,oni e oniadmin)
