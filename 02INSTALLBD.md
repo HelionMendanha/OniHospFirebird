@@ -48,7 +48,7 @@ yum install firebird-superclassic samba vim wget zip unzip tzdata ca-certificate
 ## Ajustando a porta auxiliar do firebird (3050,3051)
 ```
 sed -i 's/#RemoteServicePort = 3050/RemoteServicePort = 3050/' /etc/firebird/firebird.conf
-sed -i 's/#RemoteAuxPort = 0/RemoteAuxPort = 3050/' /etc/firebird/firebird.conf
+sed -i 's/#RemoteAuxPort = 0/RemoteAuxPort = 3051/' /etc/firebird/firebird.conf
 cat /etc/firebird/firebird.conf | grep 305
 ```
 
