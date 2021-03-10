@@ -9,12 +9,12 @@ Este servidor deverá ser exclusivo para o banco de dados do sistema OniHosp, co
 Lembramos que é responsabilidade do cliente os backups dos dados, sendo recomendamos copias em outros locais seguro.
 
 ## Versões homologada pela ONI
-- Sistema operacional: CentOS 7.9 x86_64 [(CentOS 7.9 x86_64)](http://mirror.ci.ifes.edu.br/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso)
+- Sistema operacional: Oracle Linux 7.9 x86_64 [(CentOS 7.9 x86_64)](https://yum.oracle.com/ISOS/OracleLinux/OL7/u9/x86_64/OracleLinux-R7-U9-Server-x86_64-dvd.iso)
 - Banco de dados: firebird-classic-2.5
 
 ## Download da ISO
-- A iso está disponível no site oficial do CentOS: [(CentOS 7 x86_64)](http://isoredirect.centos.org/centos/7/isos/x86_64/)
-<a href="http://isoredirect.centos.org/centos/7/isos/x86_64/" target="_blank">(CentOS 7 x86_64)</a>
+- A iso está disponível no site oficial da Oracle(yum.oracle.com): [(Oracle Linux x86_64)](https://yum.oracle.com/oracle-linux-isos.html)
+<a href="https://yum.oracle.com/oracle-linux-isos.html" target="_blank">(Oracle Linux x86_64))</a>
 ___
 # Outros documentos
 - [Download ISO](README.md)
@@ -22,4 +22,5 @@ ___
 - [Instalando Serviços](02INSTALLBD.md)
 - [Adicionando base de dados no servidor](03BASE.md)
 - [Backup do banco de dados](04BACKUP.md)
-
+- [Restore de backup](05RESTORE.md)
+- [Trocando de usuário de rede](06REDE.md)
