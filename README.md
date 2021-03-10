@@ -9,7 +9,7 @@ Este servidor deverá ser exclusivo para o banco de dados do sistema OniHosp, co
 Lembramos que é responsabilidade do cliente os backups dos dados, sendo recomendamos copias em outros locais seguro.
 
 ## Versões homologada pela ONI
-- Sistema operacional: Oracle Linux 7.9 x86_64 [(CentOS 7.9 x86_64)](https://yum.oracle.com/ISOS/OracleLinux/OL7/u9/x86_64/OracleLinux-R7-U9-Server-x86_64-dvd.iso)
+- Sistema operacional: Oracle Linux 7.9 x86_64 [(Oracle Linux 7.9 x86_64)](https://yum.oracle.com/ISOS/OracleLinux/OL7/u9/x86_64/OracleLinux-R7-U9-Server-x86_64-dvd.iso)
 - Banco de dados: firebird-classic-2.5
 
 ## Download da ISO

@@ -33,6 +33,7 @@ ___
 - [Instalando Serviços](02INSTALLBD.md)
 - [Adicionando base de dados no servidor](03BASE.md)
 - [Backup do banco de dados](04BACKUP.md)
+- [Restore de backup](05RESTORE.md)
 - [Trocando de usuário de rede](06REDE.md)
 
 
