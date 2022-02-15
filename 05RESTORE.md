@@ -33,9 +33,9 @@ Ajustando o caminho do gbak, do backup  e onde será restaurado execute o comand
 
 1. Restaurando backup com gbak (.fbk é o backup e .FDB será a base restaurada)
 ```
-/usr/bin/gbak -user SYSDBA -pas masterkey -g -c -z -v -r \
+/usr/bin/gbak -create -v -user SYSDBA -password masterkey -r -o \
 /firebirdbackup/bkpFB_2021_01_05_14h43m53s.fbk \
-/firebirddatafiles/BASE_RETORE.FDB
+/firebirddatafiles/BASE_RETORE.FDB -FIX_FSS_METADA WIN1252 -FIX_FSS_DATA WIN1252 
 
 ```
 
