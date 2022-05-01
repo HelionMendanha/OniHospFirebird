@@ -9,7 +9,7 @@ cliente="FB_"
 
 # Script com padrao /firebirdbackup
 # .............................................................
-GBAK="/usr/bin/gbak -v -b -t -user SYSDBA -pas masterkey -y /opt/dba/export.log"
+GBAK="/usr/bin/gbak -v -b -t -g -user SYSDBA -pas masterkey -y /opt/dba/export.log"
 nw=$(date "+%Y_%m_%d_%Hh%Mm%Ss")
 FBACKUP="/firebirdbackup/bkp$cliente$nw.fbk"
 FBACKUPTGZ="$FBACKUP.tar.gz"
