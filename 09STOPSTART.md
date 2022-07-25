@@ -4,8 +4,7 @@
 
 # Adicionando script de stop e start do firebird
 
-Baixando script, ajustando caminho da base e agendando backup local
->Este script de backup fará backup automaticamente na própria máquina, orientar o cliente a fazer copias destes backups para outro local, pois em caso de perca do HD ou roubo da máquina não será possível a recuperação dos dados.
+Baixando script, ajustando caminho da base e agendando no crontab
 
 ## Baixando o script de stop e start do firebird
 
